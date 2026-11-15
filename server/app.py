@@ -1,4 +1,6 @@
 from flask import Flask, jsonify, request
+from requests.exceptions import RequestException
+from lib.api import fetch_product
 
 app = Flask(__name__)
 
