@@ -48,6 +48,19 @@ pipenv run python -m server.app
 The server runs at:
 http://127.0.0.1:5555
 
+# API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | /inventory | View all products |
+| GET | /inventory/id | View one product |
+| POST | /inventory | Add a product |
+| PATCH | /inventory/id | Update a product |
+| DELETE | /inventory/id | Delete a product |
+| GET | /products/barcode | Find a product |
+| POST | /inventory/from-api/barcode | Import a product |
+
+
 # Command Line Interface
 Run the CLI in a second terminal:
 ```bash
